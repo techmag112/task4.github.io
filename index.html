@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Моя первая веб-страница</title>
+</head>
+<!-- Делаем блоки разметки растягивающимися по оси сверху вниз и минимальную высоту окна закрепляем на 100% области просмотра браузера 
+     фон всех блоков заливаем картинкой-плиткой, которую разменодим по всему экрану -->
+<body style="margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-image: url('img/noisy-background.png'); background-repeat: repeat; ">
+<!-- Все ссылки в блоке выравниваем по центру -->
+    <nav style="text-align: center; font-size: 200%">
+        <!-- Увеличим шрифт ссылок -->
+            <a href="#">Главная</a>
+            <a href="pages/about.html">Обо мне</a>
+            <a href="pages/contacts.html">Контакты</a>
+            <hr>
+    </nav>
+      <!-- Растягиваем блок на все свободное место на экране -->
+      <main style="flex-grow: 1;">
+        <!-- левая колонка-->
+        <!-- делаем ширину колонки в 60% экрана, выравниваем по правому краю с обтеканием по левому краю -->
+        <aside style="width: 60%; float: right; font-size: 150%;">
+          <!-- Увеличиваем шрифты, добавляем теги жирного и наклонного шрифтов для выделения -->
+            <h1>Меня зовут <em>Олег</em>.</h1>  
+            <p>А это страница, разработанная с применением технологии <strong>HTML5.</strong></p>
+        </aside>
+        <!-- Правая колонка-->
+        <div align="center"><img src="img/coffee.jpg" alt="картинка"></div>
+      </main>
+      <footer>
+        <hr>
+        <span>&copy;&nbsp;Skillfactory</span>
+      </footer>
+</body>
+</html>
